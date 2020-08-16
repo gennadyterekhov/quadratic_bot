@@ -1,8 +1,12 @@
 <?php
 
 require_once __DIR__ . '/vendor/autoload.php';
-
-$api_query_maker = new \App\Models\ApiQueryMaker($_ENV["token"]);
+if (array_key_exists("token", $_ENV)){
+    $token = $_ENV["token"];
+} else {
+    $token = file_get_contents("token");
+}
+$api_query_maker = new \App\Models\ApiQueryMaker($token);
 
 
 $data = file_get_contents("php://input");
