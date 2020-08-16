@@ -6,7 +6,7 @@ $api_query_maker = new \App\Models\ApiQueryMaker($_ENV["token"]);
 
 
 $data = file_get_contents("php://input");
-// file_put_contents("webhooklog", $data . PHP_EOL, FILE_APPEND | LOCK_EX);
+file_put_contents("index.html", $data . PHP_EOL, FILE_APPEND | LOCK_EX);
 
 
 
