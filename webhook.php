@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-$api_query_maker = new \App\Models\ApiQueryMaker(file_get_contents("token"));
+$api_query_maker = new \App\Models\ApiQueryMaker($_ENV["token"]);
 
 
 $data = file_get_contents("php://input");
