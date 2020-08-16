@@ -12,7 +12,7 @@ $api_query_maker = new \App\Models\ApiQueryMaker($token);
 file_put_contents("log", "api q maker obj created" . PHP_EOL, FILE_APPEND | LOCK_EX);
 
 $data = file_get_contents("php://input");
-file_put_contents("index.html", $data . PHP_EOL, FILE_APPEND | LOCK_EX);
+// file_put_contents("index.html", $data . PHP_EOL, FILE_APPEND | LOCK_EX);
 
 
 $message = json_decode($data, true);
