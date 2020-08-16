@@ -1,8 +1,8 @@
 <?php
 
 require_once __DIR__ . '/vendor/autoload.php';
-if (array_key_exists("token", $_ENV)){
-    $token = $_ENV["token"];
+if (array_key_exists("TOKEN", $_ENV)){
+    $token = $_ENV["TOKEN"];
     file_put_contents("log", "environment var exists" . PHP_EOL, FILE_APPEND | LOCK_EX);
 } else {
     $token = file_get_contents("token");
