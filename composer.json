@@ -1,11 +1,11 @@
 {
-    "name": "api-script/api_script",
-    "description": "first task at amocrm",
+    "name": "gennadyterekhov/quadratic_bot",
+    "description": "quadratic equations solver",
     "type": "project",
     "authors": [
         {
             "name": "Gennady Terekhov",
-            "email": "gterechov@team.amocrm.ru"
+            "email": "ter.ge@yandex.ru"
         }
     ],
     "require": {
@@ -19,9 +19,7 @@
         },
         "classmap": [
           "App/Controllers",
-          "App/Models/Entities",
-          "App/Models/Repositories",
-          "App/Models/Services"
+          "App/Models"
         ]
       }
 }
