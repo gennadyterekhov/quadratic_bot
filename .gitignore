@@ -1,4 +1,4 @@
-# vendor
+vendor
 errorlog
 webhooklog
 temp.php
@@ -6,3 +6,4 @@ script.php
 # composer.json
 # composer.lock
 token
+log
